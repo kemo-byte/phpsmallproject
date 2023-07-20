@@ -181,11 +181,11 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Home</h1>
+      <h1>About</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a class="active" href="/">Home</a></li>
-          <li class="breadcrumb-item"><a href="/about.php">About</a></li>
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item"><a class="active" href="/about.php">About</a></li>
           <li class="breadcrumb-item"><a href="/contact.php">Contact</a></li>
         </ol>
       </nav>
@@ -199,7 +199,8 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Welcome</h5>
-              <p class="card-body">this is home page this is home page this is home page this is home page this is home page .</p>
+              <p class="card-body">this is about page this is about page this is about page this is about page this is about page .</p>
+
             </div>
           </div>
 
