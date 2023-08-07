@@ -17,26 +17,38 @@ require('partials/header.php');
 
         <div class="col-lg-6">
 
-          <div class="card">
-            <div class="card-body">
+          <div class="card  pt-3">
+              
               <!-- <h5 class="card-title">Welcome</h5> -->
-              <p class="card-body">
-                <form  method="POST">
+              <?php if(!empty($errors)) :?>
+                      <div class="alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
+                        <?= $errors['body'] ?>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>                   
+                   <?php endif; ?>
+                   
+              <div class="card-body pt-3">
+                
                   <div class="row gy-4">
+                  
+                  <form  method="POST">
 
 
                     <div class="col-md-12">
-                      <textarea class="form-control" name="body" rows="6" placeholder="Type your note here ..." required=""></textarea>
+                      <textarea class="form-control" 
+                      name="body" rows="6" placeholder="Type your note here ..."
+                    required><?= isset($_POST['body']) ? $_POST['body'] : ''?></textarea>
                     </div>
-
-                    <div class="col-md-12 text-center">
+                   
+                    
+                    <div class="col-md-12 text-center mt-3">
                     
                       <button class="create-note-btn" type="submit">Save</button>
                     </div>
 
-                  </div>
                 </form>
-              <p>
+                  </div>
+              </div>
             </div>
           </div>
 
