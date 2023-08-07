@@ -21,7 +21,7 @@ require('partials/header.php');
             <div class="card-body">
               <!-- <h5 class="card-title">Welcome</h5> -->
               <p class="card-body">
-                <li><?= $note['body'] ?></li>        
+                <h3><?= $note['body'] ?></h3>        
                 <a href="/notes" class="mt-3">Go back</a>
               <p>
             </div>
