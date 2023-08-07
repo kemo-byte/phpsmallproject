@@ -1,6 +1,6 @@
 <?php
-require('partials/head.php');
-require('partials/header.php');
+  require('partials/head.php');
+  require('partials/header.php');
 ?>
 
   <main id="main" class="main">
@@ -21,7 +21,7 @@ require('partials/header.php');
             <div class="card-body">
               <!-- <h5 class="card-title">Welcome</h5> -->
               <p class="card-body">
-                <h3><?= $note['body'] ?></h3>        
+                <h3><?= htmlspecialchars($note['body']) ?></h3>        
                 <a href="/notes" class="mt-3">Go back</a>
               <p>
             </div>
@@ -33,6 +33,6 @@ require('partials/header.php');
 
   </main><!-- End #main -->
 
-  <?php
-require('partials/footer.php')
+<?php
+  require('partials/footer.php')
 ?>

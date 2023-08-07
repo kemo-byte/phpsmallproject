@@ -25,13 +25,13 @@ require('partials/header.php');
 
                 <?php foreach($notes as $key =>$note) :?>
                     <a href="note?id=<?= $note['id']?>" class="">
-                      <li class="list-group-item list-group-item-action"><?= $key+1?> - <?= $note['body'] ?></li>
+                      <li class="list-group-item list-group-item-action"><?= $key+1?> - <?= htmlspecialchars($note['body']) ?></li>
                     </a>
                 <?php endforeach; ?>
 
               </ol>
                   <div class="mt-3">
-                    <a href="/note-create" class="btn btn-secondary rounded-pill">Create Note</a>
+                    <a href="notes/create" class="btn btn-secondary rounded-pill">Create Note</a>
                   </div>
               <p>
             </div>

@@ -21,20 +21,20 @@ require('partials/header.php');
             <div class="card-body">
               <!-- <h5 class="card-title">Welcome</h5> -->
               <p class="card-body">
-                <form action="" method="post">
-              <div class="row gy-4">
+                <form  method="POST">
+                  <div class="row gy-4">
 
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Type your note here ..." required=""></textarea>
-                </div>
+                    <div class="col-md-12">
+                      <textarea class="form-control" name="body" rows="6" placeholder="Type your note here ..." required=""></textarea>
+                    </div>
 
-                <div class="col-md-12 text-center">
-                
-                  <button class="create-note-btn" type="submit">Save</button>
-                </div>
+                    <div class="col-md-12 text-center">
+                    
+                      <button class="create-note-btn" type="submit">Save</button>
+                    </div>
 
-              </div>
+                  </div>
                 </form>
               <p>
             </div>
