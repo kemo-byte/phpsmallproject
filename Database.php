@@ -17,10 +17,10 @@ class Database {
     $this->statement->execute($params);
     return $this;
   }
-    public function get()
-    {
-      return $this->statement->fetchAll();
-    }
+  public function get()
+  {
+    return $this->statement->fetchAll();
+  }
   
   public function find()
   {

@@ -28,7 +28,17 @@ a:hover {
   color: #717ff5;
   text-decoration: none;
 }
-
+.create-note-btn{
+  background: #4154f1;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.create-note-btn:hover{
+  background: #5969f3;
+}
 h1,
 h2,
 h3,

@@ -6,7 +6,7 @@ require('partials/header.php');
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>My Notes</h1>
+      <h1>Create Note</h1>
       <?php 
         require('partials/nav.php')
       ?>
@@ -21,18 +21,21 @@ require('partials/header.php');
             <div class="card-body">
               <!-- <h5 class="card-title">Welcome</h5> -->
               <p class="card-body">
-              <ol class="list-group list-group-numbered">
+                <form action="" method="post">
+              <div class="row gy-4">
 
-                <?php foreach($notes as $key =>$note) :?>
-                    <a href="note?id=<?= $note['id']?>" class="">
-                      <li class="list-group-item list-group-item-action"><?= $key+1?> - <?= $note['body'] ?></li>
-                    </a>
-                <?php endforeach; ?>
 
-              </ol>
-                  <div class="mt-3">
-                    <a href="/note-create" class="btn btn-secondary rounded-pill">Create Note</a>
-                  </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Type your note here ..." required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                
+                  <button class="create-note-btn" type="submit">Save</button>
+                </div>
+
+              </div>
+                </form>
               <p>
             </div>
           </div>
