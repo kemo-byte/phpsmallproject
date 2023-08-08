@@ -1,6 +1,6 @@
 <?php
-  require('views/partials/head.php');
-  require('views/partials/header.php');
+ require base_path('views/partials/head.php');
+ require base_path('views/partials/header.php');
 ?>
 
   <main id="main" class="main">
@@ -8,7 +8,7 @@
     <div class="pagetitle">
       <h1>Note</h1>
       <?php 
-        require('views/partials/nav.php')
+        require base_path('views/partials/nav.php')
       ?>
     </div><!-- End Page Title -->
 
@@ -34,5 +34,5 @@
   </main><!-- End #main -->
 
 <?php
-  require('partials/footer.php')
+  require base_path('views/partials/footer.php')
 ?>
