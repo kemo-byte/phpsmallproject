@@ -24,7 +24,8 @@
                 <h3><?= htmlspecialchars($note['body']) ?></h3>        
                 <a href="/notes" class="mt-3">Go back</a>
               <p>
-                <form  method="post">
+                <form  method="POST">
+                  <input type="hidden" name="_method" value="DELETE">
                   <input type="hidden" name="id" value="<?= $note['id'] ?>">
                   <button class="btn btn-danger">Delete</button>
                 </form>
