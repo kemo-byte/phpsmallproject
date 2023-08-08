@@ -1,6 +1,6 @@
 <?php
-require('partials/head.php');
-require('partials/header.php');
+  require('views/partials/head.php');
+  require('views/partials/header.php');
 ?>
 
   <main id="main" class="main">
@@ -8,7 +8,7 @@ require('partials/header.php');
     <div class="pagetitle">
       <h1>My Notes</h1>
       <?php 
-        require('partials/nav.php')
+        require('views/partials/nav.php')
       ?>
     </div><!-- End Page Title -->
 

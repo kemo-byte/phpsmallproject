@@ -6,4 +6,4 @@ $note= $db->query('select * from notes where id = :id',['id'=>$_GET['id']])->fin
 
 
 authorize($note['user_id'] == 1);
-require('views/note.view.php');
+require('views/notes/show.view.php');
