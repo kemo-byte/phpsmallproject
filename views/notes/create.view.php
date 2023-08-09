@@ -31,7 +31,7 @@
                 
                   <div class="row gy-4">
                   
-                  <form  method="POST">
+                  <form action="/notes" method="POST">
 
 
                     <div class="col-md-12">
