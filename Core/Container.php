@@ -16,6 +16,6 @@ class Container{
 
     $resolver = $this->bindings[$key];
 
-    call_user_func($resolver);
+    return call_user_func($resolver);
   }
 }
