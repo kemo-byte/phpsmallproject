@@ -45,12 +45,12 @@ class Router {
     $this->abort();
   }
 
-public function abort($code = '404'){
-http_response_code($code);
+  public function abort($code = '404'){
+  http_response_code($code);
 
-require base_path("views/{$code}.php");
-die();
-}
+  require base_path("views/{$code}.php");
+  die();
+  }
 }
 
 
