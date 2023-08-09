@@ -15,7 +15,7 @@ $db = new Database($config['database']);
   } 
   
   if(!empty($errors)) {
-    view('notes/create.view.php',['errors'=>$errors]);
+    return view('notes/create.view.php',['errors'=>$errors]);
   }
 
 
