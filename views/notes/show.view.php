@@ -27,6 +27,7 @@
                 <form  method="POST">
                   <input type="hidden" name="_method" value="DELETE">
                   <input type="hidden" name="id" value="<?= $note['id'] ?>">
+                  <a href="/note/edit?id=<?= $note['id'] ?>" class="btn btn-secondary">Edit</a>
                   <button class="btn btn-danger">Delete</button>
                 </form>
             </div>

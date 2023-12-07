@@ -28,16 +28,26 @@ a:hover {
   color: #717ff5;
   text-decoration: none;
 }
-.create-note-btn{
-  background: #4154f1;
+.create-note-btn,.cancel-note-btn{
   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
 }
+.create-note-btn{
+  background: hsl(234, 86%, 60%);
+
+}
+.cancel-note-btn{
+  background: #6c757d;
+
+}
 .create-note-btn:hover{
   background: #5969f3;
+}
+.cancel-note-btn:hover{
+  background: #565e64;
 }
 h1,
 h2,
