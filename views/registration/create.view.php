@@ -7,9 +7,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Sign Up</h1>
       <?php 
-        require base_path('views/partials/nav.php')
       ?>
     </div><!-- End Page Title -->
 
