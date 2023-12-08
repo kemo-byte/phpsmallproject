@@ -54,7 +54,7 @@
 
               <!-- <div class="card mb-3 "> -->
                 <!-- Start Toggle -->
-              <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" onclick=" if (checked == 'true') {checked='checked' }" />
+              <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" <?php echo isset($_GET['checked']) && ($_GET['checked']== 1)? 'checked="checked"':'' ;?> onclick=" if (checked == 'true') {checked='checked' }" />
               <label for="reg-log"></label>
               <!-- End Toggle -->
 
@@ -72,7 +72,7 @@
                         <p class="text-center small">Enter your email & password to login</p>
                       </div>
 
-                      <form class="row g-3 needs-validation" action="/users/login" method="post" novalidate>
+                      <form class="row g-3 needs-validation" action="/session" method="post" novalidate>
 
                         <div class="col-12">
                           <div class="input-group has-validation">

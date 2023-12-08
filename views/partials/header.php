@@ -128,10 +128,16 @@
 
           </ul><!-- End Profile Dropdown Items -->
         </li><!-- End Profile Nav -->
-  
+        <li>
+          <form action="/session" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <button class="btn btn-outline">Logout</button>
+          </form>
+        </li>
       </ul>
       <?php  }else {?>
-        <a class="nav-item dropdown pe-3" href="/register">Register</a>
+        <a class="nav-item dropdown pe-3" href="/register?checked=1">Register</a>
+        <a class="nav-item dropdown pe-3" href="/register">login</a>
       
 
       <?php } ?>
