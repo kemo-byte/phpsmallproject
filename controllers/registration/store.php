@@ -40,7 +40,7 @@ if($user){
 
   $db->query('INSERT INTO users(email, password) VALUES (:email, :password)',[
     'email' => $email,
-    'password' => $password
+    'password' => password_hash($password,PASSWORD_BCRYPT)
   ]);
 
 
