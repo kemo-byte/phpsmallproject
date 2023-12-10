@@ -12,7 +12,7 @@ class LoginForm{
     }
 
     if(!Validator::string($password)) {
-      $this->errors['password'] = 'please provide a valid password ';
+      $this->errors['password'] = 'please provide a valid password .....!';
     }
 
     return empty($this->errors);

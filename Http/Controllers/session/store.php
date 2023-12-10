@@ -4,8 +4,7 @@ use Http\Forms\LoginForm;
 use Core\App;
 use Core\Database;
 use Core\Authenticator;
-
-
+use Core\Session;
 
 $db = App::resolve(Database::class);
 
@@ -21,7 +20,8 @@ if($form->validate($email, $password)){
   $form->error('email', 'No matching account found for that email address and password.');
 }
 
+Session::flash('errors', $form->errors());
 
-return view('registration/create.view.php',[
-  'errors'=> $form->errors()
-]);
+
+return redirect('/login');
+

@@ -1,4 +1,7 @@
 <?php
+
+use Core\Session;
+
 session_start();
 const BASE_PATH = __DIR__. '/../';
 ini_set('display_errors',1);
@@ -23,4 +26,4 @@ $method = isset($_POST['_method']) ? $_POST['_method'] : $_SERVER['REQUEST_METHO
 
 $router->route($uri, $method);
 
-
+Session::unflash();

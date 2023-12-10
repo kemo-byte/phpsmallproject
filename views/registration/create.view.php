@@ -32,15 +32,18 @@
               </div><!-- End Logo -->
 
 
-              <?php if(!empty($errors['email'])) :?>
-                      <div class="alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
+              <?php
+              if(!empty($errors['email'])) :?>
+                            
+
+                      <div class="small alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
                         <?= $errors['email'] ?>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
                       </div>                   
                    <?php endif; ?>
                    
                    <?php if(!empty($errors['password'])) :?>
-                      <div class="alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
+                      <div class="small alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
                         <?= $errors['password'] ?>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
                       </div>                   

@@ -38,7 +38,7 @@ function view($path, $attributes = []) {
 
 
 
-function redirect() {
-    header('location: /');
+function redirect($value) {
+    header('location:'. $value);
     exit();
 }
