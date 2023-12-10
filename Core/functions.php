@@ -42,3 +42,7 @@ function redirect($value) {
     header('location:'. $value);
     exit();
 }
+
+function old($key, $default = ''){
+    return Core\Session::get('old')[$key] ?? $default;
+}

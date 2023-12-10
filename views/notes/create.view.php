@@ -21,7 +21,7 @@
               
               <!-- <h5 class="card-title">Welcome</h5> -->
               <?php if(!empty($errors)) :?>
-                      <div class="alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
+                      <div class="small alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
                         <?= $errors['body'] ?>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
                       </div>                   

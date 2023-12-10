@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="/assets/css/login.css">
 
   <main id="main" class="main">
-
+<?php  require base_path('views/partials/nav.php');
+?>
     <div class="pagetitle">
       <?php 
       ?>
@@ -80,7 +81,7 @@
                         <div class="col-12">
                           <div class="input-group has-validation">
                             <input type="email" placeholder="Email" name="email" class="form-control" id="loginemail"
-                            value=""
+                            value="<?= old('email') ?>"
                             required>
                             <div class="invalid-feedback">Please enter your email.</div>
                           </div>
