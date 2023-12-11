@@ -2,7 +2,8 @@
 
 return [
   'database'=>[
-      'host'=>'localhost',
+      'host'=>'127.0.0.1',
       'dbname'=>'myapp',
-      'charset'=>'utf8mb4'
+      'charset'=>'utf8mb4',
+      'port'=>'3306'
     ]];
